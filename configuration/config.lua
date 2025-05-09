@@ -6,7 +6,7 @@ Config = {
   -- Are you using ox_inventory? Else put "false"
   OxInventory = true, 
 
-  -- Do you want the gang members to pay with "bank" or "money" when purchasing from armory?
+  -- Do you want the gang members to card "bank" or cash "money" when purchasing from armory?
   MoneyType = "bank", 
 
   -- Your bossmenu export should be added here.
