@@ -206,7 +206,7 @@ end
 
 RegisterNetEvent("westman_gangz:Garage", function(hash, label)
   local PlayerJob = PlayerData.job and PlayerData.job.name
-  local GangConfig = Gangs[PlayerJob]  -- Directly use PlayerJob as the key
+  local GangConfig = Gangs[PlayerJob] 
 
   if GangConfig then
       local VehicleSpawn = GangConfig.VehicleSpawn
@@ -234,10 +234,10 @@ end)
 
     if elements and #elements > 0 then  -- Kontrollera om det finns armory-items
       ESX.UI.Menu.Open("default", GetCurrentResourceName(), Strings.ArmoryMenu, {
-        title = GangName .. " - " .. Strings.ArmoryMenu,  -- Visar gängnamnet följt av texten för ArmoryMenu
-        align = 'center',  -- Placering av menyn
-        elements = elements  -- Använder ArmoryItems för det aktuella jobbet
-      }, function(data, menu)  -- OnSelect Function
+        title = GangName .. " - " .. Strings.ArmoryMenu, 
+        align = 'center',  
+        elements = elements 
+      }, function(data, menu) 
         local SelectedItem = data.current
         if SelectedItem then
           TriggerServerEvent("westman_gangz:Armories", SelectedItem.hash, SelectedItem.cost, SelectedItem.value)
