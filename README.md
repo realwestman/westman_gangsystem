@@ -22,4 +22,4 @@ Your server needs to be based on ESX
 
 Oxmysql needs to be installed and integrated
 
-You’ll need to have esx_menu_default
+You’ll need to have `esx_menu_default` installed.
